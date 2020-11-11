@@ -1,0 +1,23 @@
+<ui:composition template="/_template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+     <ui:param name="menuMode" value="none" />
+    
+    <ui:define name="title">
+        <title>Free words!</title>
+    </ui:define>
+     
+     <ui:define name="content">
+        Random word: <h:outputText id="word" value="${wordsBean.word}" style="font-weight: bold"/>
+        
+        <h:form>
+            <p:commandButton value="Get me another"
+                             action="${indexBean.requestAnotherWord}"                             
+                             update="word" />
+        </h:form>
+     </ui:define>
+     
+</ui:composition>

@@ -1,0 +1,24 @@
+<ui:composition template="/_template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+     <ui:param name="menuMode" value="none" />
+    
+    <ui:define name="title">
+        <title>Free magic numbers!</title>
+    </ui:define>
+     
+     <ui:define name="content">
+        <h1>Hello wiz!</h1>
+        Your magic number is <h:outputText id="magicNumber" value="${indexBean.magicNumber}" style="font-weight: bold"/>
+        
+        <h:form>
+            <p:commandButton value="Get me another"
+                             action="${indexBean.requestAnotherMagicNumber}"                             
+                             update="magicNumber" />
+        </h:form>
+     </ui:define>
+     
+</ui:composition>
