@@ -81,13 +81,13 @@
                 <artifactId>joinfaces-maven-plugin</artifactId>
                 <version>${joinfaces.version}</version>
                 <!-- we cannot disable this goal. Slow startup and huge memory consumption -->
-<!--                <executions>
+                <executions>
                     <execution>
                         <goals>
                             <goal>classpath-scan</goal> 
                         </goals>
                     </execution>
-                </executions>-->
+                </executions>
             </plugin>  
         </plugins>
     </build>
