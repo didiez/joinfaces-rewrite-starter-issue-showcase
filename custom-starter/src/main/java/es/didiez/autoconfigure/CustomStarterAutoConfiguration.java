@@ -13,5 +13,5 @@ public class CustomStarterAutoConfiguration {
     String springApplicationName(@Value("${spring.application.name}") String springApplicationName) {
         return springApplicationName;
     }
-
+    
 }

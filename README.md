@@ -13,3 +13,12 @@ This showcase contains 3 different maven projects with the following relationshi
 - http://localhost:8080/magic
 - http://localhost:8080/debug
 - http://localhost:8080/words
+
+To reproduce the issue, execute the following all-in-one script:
+```
+./test.sh
+```
+And this to execute the same `app` with a custom rewrite annotation provider:
+```
+./test.sh custom
+```

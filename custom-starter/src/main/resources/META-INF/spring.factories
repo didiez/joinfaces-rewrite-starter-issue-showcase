@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 es.didiez.autoconfigure.CustomStarterAutoConfiguration
+es.didiez.autoconfigure.CustomRewriteAutoConfiguration
